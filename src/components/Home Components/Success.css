@@ -1,0 +1,50 @@
+.Success {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6rem;
+  background: linear-gradient(#bad4ef, #c6d9ef);
+  padding: 2rem;
+}
+
+.Success h1 {
+  color: #161e64;
+  font-size: 3rem;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.537);
+  margin-bottom: 2rem;
+}
+
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+}
+
+.cardList li {
+  list-style: none;
+  width: 30%;
+  min-width: 280px;
+}
+
+@media (max-width: 768px) {
+  .cardList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardList li {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Success h1 {
+    font-size: 2.5rem;
+  }
+
+  .cardList li {
+    width: 100%;
+  }
+}

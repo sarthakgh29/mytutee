@@ -1,0 +1,62 @@
+.World {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.World h1 {
+  color: #161e64;
+  font-size: 3rem;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.537);
+  margin-bottom: 2rem;
+}
+
+.World ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+
+.World ul li {
+  list-style: none;
+}
+
+.world-map {
+  width: 60vw;
+  max-width: 800px;
+  height: auto;
+}
+
+.world-text {
+  color: #2f2d6e;
+  font-size: 2.5rem;
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .World h1 {
+    font-size: 2.5rem;
+  }
+  .world-map {
+    width: 80vw;
+  }
+  .world-text {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .World h1 {
+    font-size: 2rem;
+  }
+  .world-text {
+    font-size: 1.5rem;
+  }
+}

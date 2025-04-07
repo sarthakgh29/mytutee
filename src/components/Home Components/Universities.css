@@ -1,0 +1,63 @@
+.Universities {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+  padding: 2rem;
+}
+
+.Universities h1 {
+  padding: 1rem;
+  font-size: 2rem;
+  color: #161e64;
+  margin-top: 1rem;
+}
+
+.Universities ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+}
+
+.Universities ul li {
+  list-style: none;
+}
+
+.Universities ul li img {
+  height: 12vh;
+  margin: 1rem;
+}
+
+@media (max-width: 768px) {
+  .Universities h1 {
+    font-size: 1.8rem;
+  }
+
+  .Universities ul {
+    gap: 1rem;
+  }
+
+  .Universities ul li img {
+    height: 10vh;
+    margin: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Universities h1 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .Universities ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .Universities ul li img {
+    height: 8vh;
+  }
+}

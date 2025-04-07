@@ -1,0 +1,65 @@
+.Courses {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.Courses h1 {
+  margin: 1.5rem 0;
+  color: #161e64;
+  font-size: 3rem;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.537);
+}
+
+.CoursesSubhead {
+  color: #5f5b5b;
+  margin: 0rem 2rem;
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+
+.CoursesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 3rem;
+  padding: 0;
+}
+
+.CoursesItem {
+  list-style: none;
+  flex: 1 1 300px;
+  max-width: 300px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .Courses h1 {
+    font-size: 2.5rem;
+  }
+
+  .CoursesSubhead {
+    font-size: 1.3rem;
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Courses h1 {
+    font-size: 2rem;
+  }
+
+  .CoursesSubhead {
+    font-size: 1.1rem;
+    margin: 0 0.5rem;
+  }
+
+  .CoursesList {
+    gap: 1rem;
+  }
+}

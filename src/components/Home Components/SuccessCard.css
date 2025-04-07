@@ -1,0 +1,61 @@
+.Scard {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  align-items: start;
+  height: auto;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+  transition: box-shadow 0.3s ease;
+  padding: 1.2rem;
+}
+
+.Scard .ScardUl {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensures the ul takes full height */
+  width: 100%;
+}
+
+.Scard .ScardUl li {
+  list-style: none;
+}
+
+/* Pushes the last two headings to the bottom without weird spacing */
+.Scard .spacer {
+  flex-grow: 1;
+}
+
+.Scard .ScardUl img {
+  height: 8vh;
+  margin-bottom: 0.5rem;
+}
+
+.Scard:hover {
+  box-shadow: 0.75rem 0.75rem 1rem rgba(0, 0, 0, 0.5);
+}
+.Scard h4 {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .Scard {
+    width: 90%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Scard h4 {
+    font-size: 1rem;
+    padding-right: 1rem;
+  }
+  .Scard {
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem;
+  }
+}

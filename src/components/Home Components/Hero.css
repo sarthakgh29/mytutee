@@ -1,0 +1,142 @@
+.Hero {
+  background: linear-gradient(#c6d9ef, #bad4ef);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.Hero ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0 5rem;
+  padding: 0;
+}
+
+.Hero ul li {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.HeroTitle h1 {
+  font-size: 4rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.PrimaryColor {
+  color: #5c5b8f;
+}
+
+.SecondaryColor {
+  color: #161e64;
+}
+
+.AccentColor {
+  color: #5e5bfb;
+}
+
+.HeroDescription {
+  color: #5f5b5b;
+  font-size: 1.3rem;
+  max-width: 500px;
+}
+
+.Mascot {
+  height: 60vh;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.Start {
+  background-color: #ee7f3f;
+  color: white;
+  font-size: large;
+  border: none;
+  margin-top: 0.5rem;
+  padding: 0.7rem 4rem;
+  border-radius: 2rem;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.Start:hover {
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.HeroTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.HeroTitle h1 {
+  font-size: 4rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.HeroTitle.visible h1 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.HeroTitle.hidden {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+/* H6 Styling - Initially hidden */
+.HeroDescription {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.HeroDescription.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .Hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Hero ul {
+    margin: 0;
+    align-items: center;
+  }
+
+  .HeroTitle {
+    font-size: 3rem;
+  }
+
+  .HeroDescription {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .Mascot {
+    display: none;
+  }
+
+  .Hero ul {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .HeroTitle {
+    font-size: 2.5rem;
+  }
+}
